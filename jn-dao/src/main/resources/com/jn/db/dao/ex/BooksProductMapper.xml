@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jn.db.dao.ex.BooksProductMapper">
+    <update id="addStock" parameterType="map">
+        update jn_books_product
+        set number = number + #{num,jdbcType=INTEGER}, update_time = now()
+        where id = #{id,jdbcType=INTEGER}
+    </update>
+
+    <update id="reduceStock" parameterType="map">
+        update jn_books_product
+        set number = number - #{num,jdbcType=INTEGER}, update_time = now()
+        where id = #{id,jdbcType=INTEGER} and number >= #{num,jdbcType=INTEGER}
+    </update>
+
+    <update id="addBrowse" parameterType="map">
+        update jn_books
+        set browse = browse + #{num,jdbcType=INTEGER}, update_time = now()
+        where id = #{id,jdbcType=INTEGER}
+    </update>
+
+    <update id="addSales" parameterType="map">
+        update jn_books
+        set sales = sales + #{num,jdbcType=INTEGER}, update_time = now()
+        where id = #{id,jdbcType=INTEGER}
+    </update>
+</mapper>
