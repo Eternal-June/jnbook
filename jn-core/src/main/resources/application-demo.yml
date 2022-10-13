@@ -3,8 +3,8 @@ jnbook:
   #c3a7f5be9b9129fc5fc59950674c332c
   #wxdc58e15d11d4bb38
   wx:
-    app-id: wx9fb318f05da2ff1d
-    app-secret: 540881816024656567ca624dad832e57
+    app-id: w5da2ff1d
+    app-secret: 540881832e57
 
   #通知相关配置
   notify:
@@ -12,10 +12,10 @@ jnbook:
       # 邮件通知配置,邮箱一般用于接收业务通知例如收到新的订单，sendto 定义邮件接收者，通常为商城运营人员
       enable: true
       host: smtp.qq.com
-      username: 2743420496@qq.com
-      password: xajasxhnczidvddca
-      sendfrom: 2743420496@aliyun.com
-      sendto: 1033180230@stu.jiangnan.edu.cn
+      username: @qq.com
+      password: xajasxha
+      sendfrom: @aliyun.com
+      sendto: mail
 
   # 快鸟物流查询配置
   express:
@@ -65,9 +65,9 @@ jnbook:
       address: http://localhost:8080/demo/storage/
     # 阿里云对象存储配置信息
     aliyun:
-      endpoint: oss-cn-shanghai.aliyuncs.com
-      accessKeyId: LTAI5tLA5zJQ9hKTyPe6paNV
-      accessKeySecret: twxADc4ez4lNYo02Ut8u49VMbf42u2
+      endpoint: ocs.com
+      accessKeyId: LTAI5tLyPe6paNV
+      accessKeySecret: twxA2Ut8u49VMbf42u2
       bucketName: jnbook
     # 腾讯对象存储配置信息
     # 请参考 https://cloud.tencent.com/document/product/436/6249
@@ -92,10 +92,10 @@ pagehelper:
 spring:
   datasource:
     druid:
-      url:  jdbc:mysql://47.102.194.182:3306/book?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&allowPublicKeyRetrieval=true&verifyServerCertificate=false&useSSL=false
+      url:  jdbc:mysql://82:3306/book?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&allowPublicKeyRetrieval=true&verifyServerCertificate=false&useSSL=false
       #      47.102.194.182
       driver-class-name:  com.mysql.jdbc.Driver
-      username:  lzx
+      username:  x
       password:  123456
       initial-size:  10
       max-active:  50
